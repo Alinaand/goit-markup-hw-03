@@ -1,4 +1,15 @@
 
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+box-sizing: inherit;
+}
+
+
+
 :root {
 
   --main-text-cl: #212121;
@@ -20,10 +31,41 @@ body {
   color: var(--main-text-cl);
   background: var(--main-bg);
 }
-.list {
-  list-style: none;
+
+.container{
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: 0;
+  margin-right: auto;
+  margin-left: auto;
+
 }
 
+.list {
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+	margin-top: 0;
+}
+.page-header .container {
+  display: flex;
+  align-items: center;
+  min-width: 80px;
+}
+.nav {
+  display: flex;
+  align-items: center;
+  margin-right: auto;
+}
 /*logo*/
 a span{
   color: var(--accent-cl);  
@@ -36,19 +78,39 @@ a span{
     line-height: 1.18;
     letter-spacing: 0.03em;
     color:var(--main-text-cl);
-
+ margin-right: 93px;
+ display: inline-block;
   }
+
+  .menu {
+    display: inline-flex;
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+
+
   .menu-item {
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.17;
     letter-spacing: 0.02em;
-
+    margin-right: 50px;
+    
   }
+
   .contacts {
    color:var(--secondary-text-cl);
+   margin-right: 50px;
   }
+  li .menu-item :nth-child(2n + 3) {
+    margin-right: 0;
+      }
+  .menu-item + .contacts :last-child {
+    margin-right: 0;
+      }
+
+      
   
 .link {
   color: inherit;
@@ -60,7 +122,9 @@ a span{
  color: var(--accent-cl);
 }
 
-
+.sections {
+padding-bottom: 94px;
+}
 
 
 
@@ -85,6 +149,14 @@ color:var(--alt-text-cl)
   letter-spacing: 0.06em;
   cursor: pointer;
     
+  }
+
+  .btn {
+    min-width: 200px;
+min-height: 50px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+border-radius: 4px;
+padding: 10px 32px;
   }
 /*h2*/
 .section-title{

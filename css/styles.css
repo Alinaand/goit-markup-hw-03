@@ -296,12 +296,26 @@ letter-spacing: 0.03em;
   letter-spacing: 0.03em;
   color:var(--secondary-text-cl) 
 }
- .portfolio-projects img {
+
+.portfolio-section .container {
+  display: flex;
+  flex-wrap: wrap;}
+
+  
+  .portfolio-section .list {
+    list-style: none;
+  }
+  .filters-menu {
+  display: flex; 
+  justify-items: center;
+  }
+
+ /*.portfolio-projects img {
   display: block;
   max-width: 100%;
-  height: auto;
+  height: auto;*/
 }
-.portfolio-projects {
+ .portfolio-section .portfolio-projects {
   display: flex;
   flex-wrap: wrap;}
 
